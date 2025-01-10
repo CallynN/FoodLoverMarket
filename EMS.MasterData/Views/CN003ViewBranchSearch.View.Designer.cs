@@ -34,6 +34,7 @@ namespace EMS.MasterData.Views
             this.textBox1 = new EMS.Shared.Theme.Controls.TextBox();
             this.label1 = new EMS.Shared.Theme.Controls.Label();
             this.label3 = new EMS.Shared.Theme.Controls.Label();
+            this.label4 = new EMS.Shared.Theme.Controls.Label();
             this.SuspendLayout();
             // 
             // txtAccept
@@ -73,11 +74,20 @@ namespace EMS.MasterData.Views
             this.label3.Size = new System.Drawing.Size(151, 11);
             this.label3.Text = "A - Active | D - Deleted ";
             // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(49, 121);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(114, 11);
+            this.label4.Text = "(TAB TO CONTINUE)";
+            // 
             // CN003ViewBranchSearchView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(221, 144);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.txtAccept);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
@@ -99,5 +109,6 @@ namespace EMS.MasterData.Views
         private Shared.Theme.Controls.TextBox txtAccept;
         private Shared.Theme.Controls.Label label2;
         private Shared.Theme.Controls.Label label3;
+        private Shared.Theme.Controls.Label label4;
     }
 }

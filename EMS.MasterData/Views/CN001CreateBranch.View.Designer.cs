@@ -37,6 +37,7 @@ namespace EMS.MasterData.Views
             this.lblTele = new EMS.Shared.Theme.Controls.Label();
             this.txtName = new EMS.Shared.Theme.Controls.TextBox();
             this.lblname = new EMS.Shared.Theme.Controls.Label();
+            this.label4 = new EMS.Shared.Theme.Controls.Label();
             this.SuspendLayout();
             // 
             // txtAccept
@@ -96,11 +97,20 @@ namespace EMS.MasterData.Views
             this.lblname.Size = new System.Drawing.Size(87, 20);
             this.lblname.Text = "Name Of Branch :";
             // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(146, 204);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(114, 11);
+            this.label4.Text = "(TAB TO CONTINUE)";
+            // 
             // CN001CreateBranchView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(427, 235);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.txtAccept);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.calender1);
@@ -110,12 +120,10 @@ namespace EMS.MasterData.Views
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.lblname);
             this.HorizontalExpressionFactor = 1D;
-            this.HorizontalScale = 1D;
             this.Name = "CN001CreateBranchView";
             this.StartPosition = Firefly.Box.UI.WindowStartPosition.CenterMDI;
             this.Text = "CN001CreateBranch";
             this.VerticalExpressionFactor = 1D;
-            this.VerticalScale = 1D;
             this.ResumeLayout(false);
 
         }
@@ -130,5 +138,6 @@ namespace EMS.MasterData.Views
         private Shared.Theme.Controls.Label label1;
         private Shared.Theme.Controls.TextBox txtAccept;
         private Shared.Theme.Controls.Label label2;
+        private Shared.Theme.Controls.Label label4;
     }
 }

@@ -38,6 +38,7 @@ namespace EMS.MasterData.Views
             this.txtName = new EMS.Shared.Theme.Controls.TextBox();
             this.label3 = new EMS.Shared.Theme.Controls.Label();
             this.label5 = new EMS.Shared.Theme.Controls.Label();
+            this.label6 = new EMS.Shared.Theme.Controls.Label();
             this.SuspendLayout();
             // 
             // checkBox1
@@ -104,12 +105,21 @@ namespace EMS.MasterData.Views
             this.label5.Size = new System.Drawing.Size(100, 20);
             this.label5.Text = "Check for True";
             // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(163, 224);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(114, 11);
+            this.label6.Text = "(TAB TO CONTINUE)";
+            // 
             // CN005CreateProductView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(475, 254);
             this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.txtAccept);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtPrice);
@@ -138,5 +148,6 @@ namespace EMS.MasterData.Views
         private Shared.Theme.Controls.TextBox txtAccept;
         private Shared.Theme.Controls.Label label4;
         private Shared.Theme.Controls.Label label5;
+        private Shared.Theme.Controls.Label label6;
     }
 }
