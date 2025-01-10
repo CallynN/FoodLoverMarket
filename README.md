@@ -20,9 +20,15 @@
    - Onece project is built successfully, you ready to run the application  
    - Note should you get an ERROR(A project with an Output Type Class Library cannot be started directly). 
    - Soultions is to got to Properties on (Solution 'EMS'(7 of 7 Projects))
-   - Select startup Project and set signle startup project to (EMS) note it might be set to ENV when you git clone the project   
+   - Select startup Project and set signle startup project to (EMS) note it might be set to ENV when you git clone the project
+  
+ 5. **Database is setup** 
+   - Make sure is setup by following the set Database Instruction   
+   - MAKE SURE THE EMS.ini FILE IS UPDATED WITH THE NEW SERVER NAME
+   - Now the application is ready to use and can test functionality.
+ 
    
-## Setting Up the Database
+## Setting Up the Database Instruction
 
 1. **Create Database **
    - Set Schema to master
