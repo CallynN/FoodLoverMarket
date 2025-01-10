@@ -18,7 +18,9 @@
 4. **Build Project**
    - You must clean and build project before running the project 
    - Onece project is built successfully, you ready to run the application  
-   
+   - Note should you get an ERROR(A project with an Output Type Class Library cannot be started directly). 
+   - Soultions is to got to Properties on (Solution 'EMS'(7 of 7 Projects))
+   - Select startup Project and set signle startup project to (EMS) note it might be set to ENV when you git clone the project   
    
 ## Setting Up the Database
 
