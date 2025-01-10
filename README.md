@@ -3,11 +3,11 @@
 
 ## Setting Up Visual Studio Project
  
-1. **.NET Framework  **
+1. **.NET Framework**
    - This project is running on .Net Framework Version 4.8, You Will need to download the Framework is you currently dont have it install link is below.
    - [.Net Framework 4.8](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48)
 
-2. **Entity Framework  **  
+2. **Entity Framework**  
    - This Project uses the Entity Framework Firefly 
    - which handles ORM and Logging in
    
