@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DA17CB70-49F8-46EB-BA10-7C219B914282}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EMS.MasterData</RootNamespace>
+    <AssemblyName>EMS.MasterData</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Firefly.Box">
+      <HintPath>..\bin\Firefly.Box.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CN001CreateBranch.cs" />
+    <Compile Include="CN002EditBranch.cs" />
+    <Compile Include="CN003ViewBranchSearch.cs" />
+    <Compile Include="CN004ViewBranch.cs" />
+    <Compile Include="CN005CreateProduct.cs" />
+    <Compile Include="CN006EditProduct.cs" />
+    <Compile Include="CN007ViewProductsSearch.cs" />
+    <Compile Include="CN008ViewProducts.cs" />
+    <Compile Include="CN009ImportPragram.cs" />
+    <Compile Include="CN010ImportData.cs" />
+    <Compile Include="CN011ExportProgram.cs" />
+    <Compile Include="CN012ExportData.cs" />
+    <Compile Include="CN013CreateBranchProduct.cs" />
+    <Compile Include="CN014CreateBranchProductScreen.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\CN001CreateBranch.View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CN001CreateBranch.View.Designer.cs">
+      <DependentUpon>CN001CreateBranch.View.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CN002EditBranch.View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CN002EditBranch.View.Designer.cs">
+      <DependentUpon>CN002EditBranch.View.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CN003ViewBranchSearch.View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CN003ViewBranchSearch.View.Designer.cs">
+      <DependentUpon>CN003ViewBranchSearch.View.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CN004ViewBranch.View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CN004ViewBranch.View.Designer.cs">
+      <DependentUpon>CN004ViewBranch.View.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CN005CreateProduct.View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CN005CreateProduct.View.Designer.cs">
+      <DependentUpon>CN005CreateProduct.View.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CN006EditProduct.View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CN006EditProduct.View.Designer.cs">
+      <DependentUpon>CN006EditProduct.View.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CN007ViewProductsSearch.View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CN007ViewProductsSearch.View.Designer.cs">
+      <DependentUpon>CN007ViewProductsSearch.View.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CN008ViewProducts.View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CN008ViewProducts.View.Designer.cs">
+      <DependentUpon>CN008ViewProducts.View.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CN009ImportPragram.View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CN009ImportPragram.View.Designer.cs">
+      <DependentUpon>CN009ImportPragram.View.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CN011ExportProgram.View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CN011ExportProgram.View.Designer.cs">
+      <DependentUpon>CN011ExportProgram.View.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CN013CreateBranchProduct.View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CN013CreateBranchProduct.View.Designer.cs">
+      <DependentUpon>CN013CreateBranchProduct.View.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CN014CreateBranchProductScreen.View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CN014CreateBranchProductScreen.View.Designer.cs">
+      <DependentUpon>CN014CreateBranchProductScreen.View.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EMS.Zoom\EMS.Zoom.csproj">
+      <Project>{caeca1aa-0949-47e3-ae01-c3c854c47527}</Project>
+      <Name>EMS.Zoom</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EMSBase\EMSBase.csProj">
+      <Project>{d9ab32c7-9796-4751-8007-7d606bf4a1ae}</Project>
+      <Name>EMSBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EMSInterfaces\EMSInterfaces.csproj">
+      <Project>{345fc89c-b380-416c-a426-8d1776caa817}</Project>
+      <Name>EMSInterfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ENV\ENV.csproj">
+      <Project>{914cd6f6-69f3-4425-837f-8ff0289e041e}</Project>
+      <Name>ENV</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\CN001CreateBranch.View.resx">
+      <DependentUpon>CN001CreateBranch.View.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CN002EditBranch.View.resx">
+      <DependentUpon>CN002EditBranch.View.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CN003ViewBranchSearch.View.resx">
+      <DependentUpon>CN003ViewBranchSearch.View.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CN004ViewBranch.View.resx">
+      <DependentUpon>CN004ViewBranch.View.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CN005CreateProduct.View.resx">
+      <DependentUpon>CN005CreateProduct.View.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CN006EditProduct.View.resx">
+      <DependentUpon>CN006EditProduct.View.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CN007ViewProductsSearch.View.resx">
+      <DependentUpon>CN007ViewProductsSearch.View.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CN008ViewProducts.View.resx">
+      <DependentUpon>CN008ViewProducts.View.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CN009ImportPragram.View.resx">
+      <DependentUpon>CN009ImportPragram.View.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CN011ExportProgram.View.resx">
+      <DependentUpon>CN011ExportProgram.View.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CN013CreateBranchProduct.View.resx">
+      <DependentUpon>CN013CreateBranchProduct.View.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CN014CreateBranchProductScreen.View.resx">
+      <DependentUpon>CN014CreateBranchProductScreen.View.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="TextIO\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
