@@ -81,11 +81,11 @@
     </Reference>
     <Reference Include="Axinterop.SHDocVw">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\Axinterop.SHDocVw.dll</HintPath>
+      <HintPath>..\Axinterop.SHDocVw.dll</HintPath>
     </Reference>
     <Reference Include="interop.SHDocVw">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\interop.SHDocVw.dll</HintPath>
+      <HintPath>..\interop.SHDocVw.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -31,17 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EMSBase, Version=4.6.0.32830, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\bin\EMSBase.dll</HintPath>
-    </Reference>
-    <Reference Include="ENV, Version=4.6.0.32830, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\bin\ENV.dll</HintPath>
-    </Reference>
     <Reference Include="Firefly.Box, Version=4.6.0.32830, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\bin\Firefly.Box.dll</HintPath>
+      <HintPath>..\Firefly.Box.Dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -58,9 +50,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\EMSInterfaces\EMSInterfaces.csproj">
-      <Project>{345fc89c-b380-416c-a426-8d1776caa817}</Project>
-      <Name>EMSInterfaces</Name>
+    <ProjectReference Include="..\EMSBase\EMSBase.csProj">
+      <Project>{d9ab32c7-9796-4751-8007-7d606bf4a1ae}</Project>
+      <Name>EMSBase</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
