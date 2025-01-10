@@ -13,7 +13,7 @@
    
 3. **Project Referances**
    - The Project Referances have been included in the project should any referances be missing you can navigate the project folder in windows to find all dll's needed
-   - most import dll's (ENV.dll, Firefly.Box.Dll,interop.SHDocVw.dll, Axinterop.SHDocVw.dll, itextsharp.dll, Oracle.ManagedDataAccess.dll )
+   - most important dll's (ENV.dll, Firefly.Box.Dll,interop.SHDocVw.dll, Axinterop.SHDocVw.dll, itextsharp.dll, Oracle.ManagedDataAccess.dll )
    
 4. **Build Project**
    - You must clean and build project before running the project 
